@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — mellojoy-watch</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1b1b1f; --muted: #5a5a66; --bg: #fff; --line: #e3e3e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8ec; --muted: #a0a0ad; --bg: #16161a; --line: #2c2c33; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font-family: system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif;
+         line-height: 1.8; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 5rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 .5rem; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="sub">mellojoy-watch ／ 最終更新: 2026年10月21日</p>
+
+  <p>
+    mellojoy-watch（以下「本アプリ」）は、作者個人が自分のために作成・利用している
+    デスクトップアプリケーションです。本アプリは利用者の情報を収集するサーバーを持たず、
+    作者を含む第三者がデータを受け取ることはありません。
+  </p>
+
+  <h2>取り扱う情報</h2>
+  <ul>
+    <li><b>Google アカウントの情報（Gmail）</b> — 本人認証コードのメールを読み取るために使用します。</li>
+    <li><b>支払い情報</b> — 利用者本人が本アプリに入力したカード情報。</li>
+    <li><b>動作ログ</b> — 監視・購入処理の記録。</li>
+  </ul>
+
+  <h2>Gmail の利用範囲</h2>
+  <p>
+    本アプリは <code>https://www.googleapis.com/auth/gmail.readonly</code> のみを要求します。
+    メールの送信・変更・削除は行いません。
+  </p>
+  <p>
+    読み取るメールは、<b>カード会社から届く本人認証コードのメールに限定</b>しています。
+    具体的には、送信元アドレスと件名で絞り込んだうえで、認証コードの照合に必要な
+    項目（カード番号の下 4 桁・利用店名・金額・参照コード・認証コード）だけを取り出します。
+    それ以外のメールの内容は取得も保存もしません。
+  </p>
+
+  <h2>保存場所</h2>
+  <p>
+    取得した情報はすべて<b>利用者自身のパソコンの中だけ</b>に保存されます。
+    外部のサーバーへ送信することはありません。
+  </p>
+  <ul>
+    <li>Google のアクセストークンとカード情報は、OS の暗号化機構
+      （Windows は DPAPI、macOS は Keychain）で暗号化して保存します。</li>
+    <li>認証コードはその場で入力に使うだけで、保存しません。</li>
+    <li>動作ログはローカルのファイルに保存され、一定期間を過ぎたものは削除されます。</li>
+  </ul>
+
+  <h2>第三者提供</h2>
+  <p>
+    本アプリは取得した情報を第三者に提供しません。広告・解析の仕組みも含んでいません。
+    通信先は、利用者が指定したストアおよび決済・認証に必要なサービス、
+    そして Gmail API のみです。
+  </p>
+
+  <h2>連携の解除</h2>
+  <p>
+    Google アカウントとの連携は、本アプリの設定画面から解除できます。
+    また <a href="https://myaccount.google.com/permissions">Google アカウントのセキュリティ設定</a>
+    からいつでも取り消せます。解除すると、保存されていたトークンは削除されます。
+  </p>
+
+  <h2>Google API Services ユーザーデータ ポリシー</h2>
+  <p>
+    本アプリによる Google API から取得した情報の利用は、
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+    （Limited Use requirements を含む）に準拠します。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p>
+    本アプリは作者個人の利用に限られるため、一般向けの問い合わせ窓口は設けていません。
+    連絡先は Google Cloud プロジェクトに登録したデベロッパー連絡先のとおりです。
+  </p>
+
+  <footer>
+    <a href="./">ホーム</a> ・ <a href="./terms.html">利用規約</a>
+  </footer>
+</main>
+</body>
+</html>

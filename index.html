@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mellojoy-watch</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1b1b1f; --muted: #5a5a66; --bg: #fff; --line: #e3e3e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8ec; --muted: #a0a0ad; --bg: #16161a; --line: #2c2c33; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font-family: system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif;
+         line-height: 1.8; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 5rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 .5rem; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>mellojoy-watch</h1>
+  <p class="sub">個人利用のデスクトップアプリケーション</p>
+
+  <p>
+    オンラインストアの在庫を監視し、在庫が復活したときにデスクトップ通知を出して
+    購入手続きの画面を開く、個人用のツールです。作者本人が自分の買い物のために使っており、
+    配布・販売はしていません。
+  </p>
+
+  <h2>できること</h2>
+  <ul>
+    <li>指定したストアの在庫をポーリングして、入荷を検知する</li>
+    <li>検知したときにデスクトップ通知を出し、購入画面を開く</li>
+    <li>本人の操作を補助するために、保存してある支払い情報を画面に入力する</li>
+    <li>カード会社から届く本人認証コードのメールを読み取り、認証画面に入力する</li>
+  </ul>
+
+  <h2>Google アカウントの利用について</h2>
+  <p>
+    最後の項目のために、本人の Gmail を読み取り専用（<code>gmail.readonly</code>）で参照します。
+    取得対象は、カード会社から届く本人認証コードのメールに限定しています。
+    詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+  </p>
+
+  <footer>
+    <a href="./privacy.html">プライバシーポリシー</a> ・
+    <a href="./terms.html">利用規約</a>
+  </footer>
+</main>
+</body>
+</html>
